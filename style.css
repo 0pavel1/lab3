@@ -1,0 +1,181 @@
+#B {
+    background: #000;
+    display: flex;
+    overflow-x:hidden;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container, .containerPort {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    animation: page-showing .5s;
+}
+
+@keyframes page-showing {
+    from {
+        transform: translateX(-70%);
+    }
+}
+
+.containerPort{
+    animation: pageAlt-showing .3s;
+    color: #4C57B8;
+    font-size: 30px;
+}
+
+@keyframes pageAlt-showing {
+    from {
+        transform: translateX(90%);
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4C57B8;
+}
+
+.header__menu {
+    position: relative;
+}
+
+.header__menu .menu__btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu__btn {
+    padding: 0;
+}
+.header__menu .menu__list {
+    margin: 0;
+    padding: 10px 20px;
+    list-style-type: none;
+    border-radius: 10px;
+    background: #4C57B8;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: menu-showing .3s;
+}
+
+.header__menu .menu__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes menu-showing {
+    from {
+        transform: translateY(80%);
+
+    }
+}
+
+.info__fullname{
+    color: white;
+    font-size: 10rem;
+    margin-top:0px;
+    margin-bottom:30px;
+}
+
+.info__nickname{
+    color: white;
+    font-size: 3.5rem;
+    display: inline-block;
+    text-decoration: none;
+    align-self:center;
+    margin-left:30px;
+}
+
+.link{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#portfolio{
+    outline: none;
+    align-self: flex-end;
+    position: fixed;
+    right:10%;
+    bottom: 10%;
+    animation: page-showing .6s;
+}
+
+#portfolio, #info {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    display: flex;
+}
+
+#info {
+    width:150px;
+    align-self: flex-end;
+    position: fixed;
+    left:8%;
+    top: 4%;
+    animation: pageAlt-showing .4s;
+}
+
+#arrow {
+    transform-origin: center center;
+    transform: rotate(180deg);
+}
+
+.port{
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    color: #4C57B8;
+    position: relative;
+    top: 8px;
+    margin-right: -157px;
+    text-wrap: nowrap;
+}
+
+#toInfo {
+    top: 20px;
+    left: 66px;
+    font-size: 1.8em;
+}
+
+.work{
+    width: 26%;
+    height: 26%;
+    margin-left: 5%;
+}
+
+img {
+    max-width: 100%;
+    height: 300px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 5px 50px black;
+    object-fit:cover;
+}
+.portfolioMenu{
+    display: flex;
+    align-items: center;
+}
+.worksList{
+    display: flex;
+}
