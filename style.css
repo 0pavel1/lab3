@@ -160,8 +160,10 @@
 
 .work{
     width: 26%;
-    height: 26%;
-    margin-left: 5%;
+    margin-left: 4%;
+    padding: 20px;
+    padding-bottom: 10px;
+    position: relative;
 }
 
 img {
@@ -169,13 +171,23 @@ img {
     height: 300px;
     border: 0px solid #000;
     border-radius: 10px;
-    box-shadow: 10px 5px 50px black;
+    box-shadow: 15px 20px 20px 3px black;
     object-fit:cover;
+    margin-bottom: 10px;
 }
 .portfolioMenu{
     display: flex;
     align-items: center;
+    margin-top: 8rem;
 }
 .worksList{
     display: flex;
+}
+.linkgit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
